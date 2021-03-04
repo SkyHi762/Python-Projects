@@ -4,7 +4,7 @@ import random
 import requests
 
 
-def word_generator():  # ***NEED TO PRINT WORD WITHOUT HEADER***
+def word_generator():  
     # so needed to find the file path of the csv. Done this by searching
     # up the document in windows search bar and copying the full file path
     # when you right click
@@ -15,19 +15,7 @@ def word_generator():  # ***NEED TO PRINT WORD WITHOUT HEADER***
     s = str(word.strip())
     # random.shuffle returns words rather than single elements like .choice does
     return s
-    # A delimiter is one or more characters that separate text strings.
-    # Common delimiters are commas (,), semicolon (;), quotes ( ", ' ),
-    # braces ({}), pipes (|), or slashes ( / \ ).
-    # hen a program stores sequential or tabular data,
-    # it delimits each item of data with a predefined character.
-    # For example, in the data "john|doe," a vertical bar (the pipe character, |)
-    # delimits the two data items john and doe. When a script or program reads the
-    # data and encounters a vertical bar, it knows that one data item has ended,
-    # and another begins
-    # NB: ****CSV=COMMA SEPARATED VALUES, SO USED COMMA AS THE DELIMITER
-    # (you can use semi colon) but need to change regional settings
-    # as in excel comma is default separator
-
+  
 
 word_generator()
 
@@ -92,7 +80,7 @@ def hangman(words):
                     print(words)
                     print(define(word_generator()))
                     break
-                    # this is an issue seek help
+                    
 
                 except:
                     print(words)
